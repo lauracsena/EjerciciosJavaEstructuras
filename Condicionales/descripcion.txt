@@ -1,0 +1,103 @@
+EJERCICIO1
+
+1. import java.util.*;
+Esta línea importa todas las clases del paquete java.util, que es parte de la biblioteca estándar de Java.
+El * indica que se importan todas las clases del paquete, aunque en este caso solo se utiliza la clase Scanner para leer entradas del usuario.
+2. public class Condicional1 {
+Aquí se declara la clase pública llamada Condicional1. En Java, todos los programas deben estar dentro de una clase. El nombre de la clase coincide con el nombre del archivo (Condicional1.java).
+3. public static void main(String[] args) {
+Este es el método principal del programa. El método main es el punto de entrada de cualquier aplicación Java, es decir, el programa comienza su ejecución aquí.
+public: significa que es accesible desde cualquier parte.
+static: indica que el método pertenece a la clase y no a una instancia.
+void: significa que el método no devuelve ningún valor.
+String[] args: es un parámetro que puede recibir argumentos desde la línea de comandos, aunque en este caso no se utilizan.
+4. Scanner sc = new Scanner(System.in);
+Se crea un objeto Scanner llamado sc que está vinculado a la entrada estándar del sistema (el teclado). Esto permite al programa leer datos ingresados por el usuario.
+Scanner(System.in): crea un Scanner que lee desde la entrada estándar (normalmente el teclado).
+5. int N;
+Declara una variable entera (int) llamada N. Esta variable se utilizará para almacenar el número que el usuario introduzca.
+6. System.out.print("Introduzca Numero entero: ");
+Utiliza System.out.print para mostrar el mensaje en la consola solicitando al usuario que introduzca un número entero. La diferencia entre print y println es que print no añade un salto de línea al final, lo que significa que el cursor se queda en la misma línea después del texto.
+7. N = sc.nextInt();
+Aquí, el programa usa el objeto Scanner (en este caso sc) para leer un número entero ingresado por el usuario.
+sc.nextInt(): lee el próximo valor entero de la entrada y lo asigna a la variable N.
+8. if (N % 2 == 0)
+Esta es una estructura condicional. Se evalúa si el número N es par.
+N % 2 == 0: esta expresión utiliza el operador módulo (%), que devuelve el resto de dividir N entre 2. Si el resto es 0, el número es par. Si no lo es, el número es impar.
+Si esta condición es verdadera (es decir, N es par), el bloque de código dentro del if se ejecutará.
+9. System.out.println("Par");
+Si la condición del if es verdadera (es decir, si el número es par), el programa imprime "Par" en la consola.
+10. else
+Esta es la rama alternativa de la condición if. Si la condición N % 2 == 0 es falsa (es decir, si el número es impar), se ejecutará el bloque de código dentro del else.
+11. System.out.println("Impar");
+Si el número es impar, el programa imprime "Impar" en la consola.
+
+EJERCICIO 2
+
+1. import java.util.*;
+Esta línea indica que estamos importando todas las clases del paquete java.util, que es parte de la biblioteca estándar de Java. Aquí, se usa específicamente para importar la clase Scanner, que nos permitirá leer la entrada del usuario desde el teclado.
+2. public class Condicional2 {
+Se declara una clase pública llamada Condicional2. En Java, todo el código debe estar dentro de una clase.
+El nombre de la clase Condicional2 debe coincidir con el nombre del archivo Java (por ejemplo, Condicional2.java).
+3. public static void main(String[] args) {
+Este es el método principal del programa, que es donde comienza la ejecución.
+public: El método es público, lo que significa que cualquier otra clase puede acceder a él.
+static: Es un método estático, lo que significa que se puede ejecutar sin crear una instancia (objeto) de la clase.
+void: El método no devuelve ningún valor.
+String[] args: Es un arreglo que puede contener argumentos pasados desde la línea de comandos (en este programa no se usa).
+4. Scanner sc = new Scanner(System.in);
+Aquí se crea un objeto Scanner llamado sc.
+Scanner(System.in): Este constructor crea un Scanner que está conectado a la entrada estándar del sistema (generalmente el teclado). Nos permite leer lo que el usuario escriba en la consola.
+5. int N;
+Se declara una variable entera (int) llamada N. Esta variable almacenará el número que el usuario ingresará.
+6. System.out.print("Ingrese un numero entero: ");
+Muestra un mensaje en la consola pidiéndole al usuario que ingrese un número entero.
+print: Muestra el texto sin añadir un salto de línea al final, por lo que el cursor del texto sigue en la misma línea donde el usuario debe ingresar el número.
+7. N = sc.nextInt();
+Aquí el programa espera a que el usuario ingrese un número entero.
+sc.nextInt(): Esta función del objeto Scanner lee el próximo número entero ingresado por el usuario y lo asigna a la variable N.
+8. if(N % 10 == 0)
+Esta es una estructura condicional.
+N % 10 == 0: Esta expresión utiliza el operador módulo (%), que calcula el resto de dividir N entre 10.
+Si el resto es 0, significa que el número es divisible entre 10 y, por lo tanto, es un múltiplo de 10.
+Si el resto no es 0, el número no es múltiplo de 10.
+Si la condición es verdadera (es decir, N es múltiplo de 10), el programa ejecutará el código dentro del bloque if.
+9. System.out.println("Es Multiplo de 10");
+Si el número N es múltiplo de 10 (el resto de dividir N entre 10 es 0), el programa muestra en la consola "Es Multiplo de 10".
+10. else
+Esta es la alternativa a la condición if.
+Si el número no es múltiplo de 10 (es decir, si la condición N % 10 == 0 es falsa), entonces se ejecutará el bloque de código dentro del else.
+11. System.out.println("NO es Multiplo de 10");
+Si la condición del if es falsa, el programa muestra "NO es Multiplo de 10" en la consola.
+
+EJERCICIO 3
+1. import java.io.*;
+Esta línea importa todas las clases del paquete java.io, que incluye las clases necesarias para trabajar con la entrada y salida en Java. En este caso, se utiliza para permitir el uso del método System.in.read().
+2. import java.util.*;
+Esta línea importa todas las clases del paquete java.util, que incluye el uso de la clase Scanner, que nos permite leer entradas desde el teclado.
+3. public class Condicional3 {
+Se declara la clase pública llamada Condicional3. En Java, todo el código debe estar dentro de una clase.
+El nombre de la clase debe coincidir con el nombre del archivo Java (por ejemplo, Condicional3.java).
+4. public static void main(String[] args) throws IOException {
+Este es el método principal del programa, que es el punto donde empieza la ejecución.
+throws IOException: Indica que este método puede lanzar una excepción de entrada/salida (IOException) durante la ejecución. Esto es necesario porque usamos el método System.in.read(), que puede generar este tipo de excepción.
+public, static, void, y String[] args funcionan igual que en los programas anteriores.
+5. Scanner sc = new Scanner(System.in);
+Aquí se crea un objeto Scanner llamado sc, que está vinculado a la entrada estándar del sistema (el teclado). Este objeto se usa para leer datos ingresados por el usuario, aunque en este código no se usa activamente para la entrada del carácter, ya que la lectura se realiza con System.in.read().
+6. char car, car1;
+Se declaran dos variables de tipo char (carácter) llamadas car y car1. Aunque en este código, car1 no se utiliza.
+7. System.out.print("Introduzca un caracter: ");
+Muestra un mensaje en la consola pidiendo al usuario que introduzca un carácter.
+print no incluye un salto de línea, lo que significa que el texto y el cursor del teclado permanecen en la misma línea.
+8. car = (char)System.in.read();
+Aquí se utiliza el método System.in.read() para leer solo un carácter del teclado.
+System.in.read() lee el valor numérico del carácter (su código ASCII) ingresado por el usuario, y el (char) convierte este valor numérico en un carácter.
+9. if(Character.isUpperCase(car))
+Se utiliza una estructura condicional para comprobar si el carácter ingresado es una letra mayúscula.
+Character.isUpperCase(car) es un método que pertenece a la clase Character y devuelve true si el carácter ingresado es una letra mayúscula, y false si no lo es.
+10. System.out.println("Es una letra mayuscula ");
+Si el carácter ingresado es una letra mayúscula, el programa imprime en la consola "Es una letra mayuscula".
+11. else
+Esta es la rama alternativa que se ejecuta si el carácter ingresado no es una letra mayúscula.
+12. System.out.println("NO es una letra mayuscula ");
+Si el carácter ingresado no es una letra mayúscula, el programa imprime en la consola "NO es una letra mayuscula".
