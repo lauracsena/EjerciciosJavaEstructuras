@@ -1,18 +1,20 @@
 import java.io.*;
 
 public class Condicional4 {
-    public static void main(String[] args) throws IOException{
-        char car1, car2;
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        
         System.out.print("Ingrese el primer caracter: ");
-        car1 =(char)System.in.read();
-        System.in.read();
+        char car1 = (char) reader.read();
+        reader.readLine(); // consume the remaining newline
+
         System.out.print("Ingrese el segundo caracter: ");
-        car2 = (char)System.in.read();
+        char car2 = (char) reader.read();
+        reader.readLine(); // consume the remaining newline
 
-        if(car1==car2)
-        System.out.println("Son iguales");
+        if (car1 == car2)
+            System.out.println("Son iguales");
         else
-        System.out.println("No son Iguales");
+            System.out.println("No son iguales");
     }
-
 }

@@ -4,6 +4,7 @@ public class Condicional2 {
         Scanner sc = new Scanner(System.in);
         int N;
         System.out.print("Ingrese un numero entero: ");
+
         N =sc.nextInt();
         if(N%10==0)
         System.out.println("Es Multiplo de 10");
